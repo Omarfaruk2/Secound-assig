@@ -104,9 +104,11 @@ footer{
 @media only screen and (max-width:576px){
     body{
         width: 312px;
-        margin: 0;
+        margin-left: 15px;
     }
-    .h2
+    .header-tittle , h1, p{
+        text-align: center;
+    }
     /* .container{
         width: 100%;
     } */
@@ -116,7 +118,9 @@ footer{
    footer{
        width: 312px;
    }
-   
+   .item i{
+    color: #FB8200;
+}
    .bonus-section{
        display: flex;
        flex-direction: column;
