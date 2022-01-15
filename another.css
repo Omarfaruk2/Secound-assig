@@ -151,3 +151,25 @@ footer{
         flex-direction:column ;
     }
 }
+
+
+@media only screen and (min-width:688px) and (max-width:992px){
+    main{
+        width: 680px;
+        margin: 0;
+        padding: 0;
+    }
+    .header-tittle , h1, p{
+        text-align: center;
+    }
+    .bonus-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .influencer-banner, .items, .bonus-section{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .item,.banner-test,.banner-image, .influencer-banner{
+        flex-direction:column ;
+    }
+}
