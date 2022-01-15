@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;500;700&family=Qwitcher+Grypen:wght@700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    
+    justify-content: center;
+}
+.influencer-banner{
+    display: flex;
+    align-items: center;
+}
+.banner-image img{
+    width: 440px;
+    height: 414px;
+}
+.container{
+    width:870px;
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* width: 1047px; */
+}
+.item{
+    margin:0 10px;
+    box-shadow: rgba(0, 0, 0, 0.27) 0px 5px 15px;
+    border-radius: 7px;
+    padding: 15px;
+    /* width: 300px; */
+    margin-top: 30px;
+}
+.see-more{
+    text-align: right;
+}
+.bonus-section{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1150px;
+}
+.bonus-right{
+    width: 117%;
+}
+.bonus-right h1{
+    margin: 0px;
+    font-size: 38px;
+}
+.bonus-right p{
+    margin: 0;
+}
+.bonus-left img{
+    border: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+    border-radius: 7px;
+    width: 85%;
+}
+.bonus-right button{
+    background-color:#E02C6D;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    margin-top: 10px;
+}
+.bonus-right button a{
+    color: white;
+    text-decoration: none;
+}
+.bonus-right button a, i{
+    font-size: 16px;
+    margin-left: 3px;
+}
+
+footer{
+    background-color: #0A0826;
+    color: white;
+    text-align: center;
+}
+.footer{
+    padding: 30px 0;
+    margin-top:100px;
+}
+.footer h2,p,small{
+    margin: 0;
+    padding: 0;
+}
+.social-icon i{
+    margin:10px;
+    color:white;
+    background-color: rgba(0,0,0, .6) ;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+
+
+@media only screen and (max-width:576px){
+    body{
+        width: 312px;
+        margin: 0;
+    }
+    .h2
+    /* .container{
+        width: 100%;
+    } */
+   .item, .bonus-section, .influencer-banner, .see-more, .join{
+       width: 312px;
+   }
+   footer{
+       width: 312px;
+   }
+   
+   .bonus-section{
+       display: flex;
+       flex-direction: column;
+   }
+    .influencer-banner, .items, .bonus-section{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .item,.banner-test,.banner-image, .influencer-banner{
+        flex-direction:column ;
+    }
+}
