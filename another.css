@@ -1,175 +1,275 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;500;700&family=Qwitcher+Grypen:wght@700&display=swap');
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
-main{
+
+main {
+    /* display: flex; */
+
+    /* justify-content: center; */
+}
+
+.product-tittle {
+    text-align: center;
+}
+
+.influencer-banner {
     display: flex;
-    
+    margin: auto;
+    align-items: center;
     justify-content: center;
 }
-.influencer-banner{
-    display: flex;
-    align-items: center;
+
+.banner-image img {
+    /* width: 440px; */
+    /* height: 414px; */
 }
-.banner-image img{
-    width: 440px;
-    height: 414px;
+
+.container {
+    width: 100%;
 }
-.container{
-    width:870px;
-}
-.items{
+
+.itemspararent {
+    width: 90%;
+    margin: auto;
+    margin: auto;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     /* width: 1047px; */
 }
-.frist-buttom{
-    background-color:#E02C6D;
+
+.frist-buttom {
+    background-color: #E02C6D;
     color: white;
     padding: 12px 25px;
     border-radius: 25px;
     border: none;
 }
-.frist-buttom a{
+
+.frist-buttom a {
     color: white;
     text-decoration: none;
 }
-.frist-buttom a, i{
+
+.frist-buttom a,
+i {
     font-size: 16px;
     margin-left: 3px;
 }
-.frist-buttom:hover{
+
+.frist-buttom:hover {
     transform: scale(1.2);
     transition: 1.5s;
     opacity: .8;
 }
-.item{
-    margin:0 10px;
+
+.item {
+    margin: auto;
+    margin-top: 20px;
     box-shadow: rgba(0, 0, 0, 0.27) 0px 5px 15px;
     border-radius: 7px;
-    padding: 15px;
-    /* width: 300px; */
-    margin-top: 30px;
+    padding: 20px;
+    width: 300px;
+    /* margin-top: 30px; */
 }
-.see-more{
+
+.item img {
+    margin: auto;
+}
+
+
+.see-more {
     text-align: right;
 }
-.bonus-section{
-    margin-top: 100px;
+
+.bunus-image {
+    margin: auto;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 1150px;
+    justify-content: end;
 }
-.bonus-right{
-    width: 117%;
+
+.bonus-section {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+        /* display: flex; */
+        /* justify-content: space-around; */
+        /* align-items: center; */
+        /* width: 1150px; */
+
 }
-.bonus-right h1{
+
+.bonus-section img {
+    margin: auto;
+    width: 80%;
+}
+
+.bonus-right {
+    /* width: 117%; */
+}
+
+.bonus-right h1 {
     margin: 0px;
     font-size: 38px;
 }
-.bonus-right p{
+
+.bonus-right p {
     margin: 0;
 }
-.bonus-left img{
+
+.bonus-left img {
     border: 5px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
     border-radius: 7px;
     width: 85%;
 }
-.item i{
+
+.item i {
     color: #FB8200;
 }
-.bonus-right button{
-    background-color:#E02C6D;
+
+small {
+    max-width: 50%;
+}
+
+.bonus-right button {
+    background-color: #E02C6D;
     color: white;
     padding: 12px 25px;
     border: none;
     margin-top: 10px;
 }
-.bonus-right button a{
+
+.bonus-right button a {
     color: white;
     text-decoration: none;
 }
-.bonus-right button a, i{
+
+.bonus-right button a,
+i {
     font-size: 16px;
     margin-left: 3px;
 }
 
-footer{
+footer {
     background-color: #0A0826;
     color: white;
     text-align: center;
 }
-.footer{
+
+.footer {
     padding: 30px 0;
-    margin-top:100px;
+    margin-top: 100px;
 }
-.footer h2,p,small{
+
+.footer h2,
+p,
+small {
     margin: 0;
     padding: 0;
 }
-.social-icon i{
-    margin:10px;
-    color:white;
-    background-color: rgba(0,0,0, .6) ;
+
+.social-icon i {
+    margin: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, .6);
     padding: 20px;
     border-radius: 50%;
     font-size: 25px;
 }
 
+.header-tittle {
+    text-align: center;
+}
 
 
-@media only screen and (max-width:576px){
-    body{
-        width: 312px;
-        
+@media only screen and (max-width:576px) {
+    body {
+        /* width: 312px; */
+
     }
-    .header-tittle , h1, p{
+
+    .join {
+        text-align: center;
+        width: 50%;
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        /* margin: auto; */
+    }
+
+    .header-tittle,
+    h1,
+    p {
         text-align: center;
     }
-   
-   .item, .bonus-section, .influencer-banner, .see-more, .join{
-       width: 312px;
-   }
-   footer{
-       width: 312px;
-   }
-  
-   .bonus-section{
-       display: flex;
-       flex-direction: column;
-   }
-    .influencer-banner, .items, .bonus-section{
-        grid-template-columns: repeat(1,1fr);
+
+    .item,
+    .influencer-banner,
+    .see-more {
+        width: 312px;
     }
-    .item,.banner-test,.banner-image, .influencer-banner{
-        flex-direction:column ;
+
+    footer {
+        width: 100%;
+    }
+
+    .bonus-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .influencer-banner,
+    .itemspararent,
+    .bonus-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .item,
+    .banner-test,
+    .banner-image,
+    .influencer-banner {
+        flex-direction: column;
+    }
+
+    .influencer-banner {
+        width: 80%;
     }
 }
 
 
-@media only screen and (min-width:688px) and (max-width:992px){
-    main{
+@media only screen and (min-width:688px) and (max-width:992px) {
+    main {
         width: 680px;
         margin: 0;
         padding: 0;
     }
-    .header-tittle , h1, p{
+
+    .header-tittle,
+    h1,
+    p {
         text-align: center;
     }
-    .bonus-section{
+
+    .bonus-section {
         display: flex;
         flex-direction: column;
     }
-    .influencer-banner, .items, .bonus-section{
-        grid-template-columns: repeat(2,1fr);
+
+    .influencer-banner,
+    .itemspararent,
+    .bonus-section {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .item,.banner-test,.banner-image, .influencer-banner{
-        flex-direction:column ;
+
+    .item,
+    .banner-test,
+    .banner-image,
+    .influencer-banner {
+        flex-direction: column;
     }
 }
